@@ -1,0 +1,33 @@
+title: YoungSeong Kim
+email: ""
+description: >-
+  RL lover & DL theory lover. 강화학습과 딥러닝 이론을 탐구하는 공간.
+baseurl: ""
+url: "https://kim-ai-gpu.github.io"
+github_username: Kim-Ai-gpu
+
+# Build settings
+theme: minima
+minima:
+  skin: dark
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# Permalink
+permalink: /:year/:month/:day/:title/
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
