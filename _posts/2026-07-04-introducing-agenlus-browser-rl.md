@@ -25,6 +25,23 @@ Yet, compared to the explosive growth of LLM playgrounds and tools, RL remains r
 
 We built **[Agenlus](https://agenlus.com)** to solve this. It is a community platform and model hub for Reinforcement Learning designed to run **entirely in the browser**—no installation, no CUDA configuration, just instant training and evaluation.
 
+## Democratizing Reinforcement Learning
+
+For the past decade, state-of-the-art Reinforcement Learning has been the exclusive playground of elite corporate labs and well-funded academic institutions. Whether it is Google DeepMind's AlphaGo, OpenAI's Dota 2 bots, or sophisticated industrial robotics control, RL has required access to massive compute clusters, complex simulator setups, and specialized mathematical expertise. 
+
+This centralization has stifled the creative potential of independent developers and researchers. While anyone can easily prompt a large language model online, starting out with RL requires wrestling with complex local setups, GPU drivers, and local virtualization, only to wait hours for a simple agent to converge.
+
+**We believe RL needs to be democratized.**
+
+By leveraging modern web technologies, we want to break down these barriers:
+* **Lowering the Entry Barrier**: You don't need a high-end local machine or an AWS budget to experiment with RL. If you have a browser, you have a fully functional RL research lab.
+* **Open-Source Environment Sharing**: Just as Hugging Face democratized NLP by making models easy to share, Agenlus allows developers to upload, share, and benchmark environments instantly.
+* **Interactive Learning**: Seeing the training process happen live in the browser builds a deep, intuitive understanding of how agent policies adapt to rewards.
+
+By putting the tools of RL directly into the hands of the global developer community, we aim to accelerate the discovery of novel control architectures and algorithms that corporate labs might overlook.
+
+---
+
 ## Why B2C RL is Highly Viable Today
 
 We are currently witnessing immense compute inflation dominated by LLMs. This has made building B2C AI startups incredibly expensive, forcing founders to choose between paying massive cloud GPU invoices or raising millions in venture capital. 
