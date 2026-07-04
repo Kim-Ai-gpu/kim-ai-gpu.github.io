@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I Democratized the AI That Learns by Failing to Break the Tech Giants' Monopoly"
+title: "Show HN: I built a site where your browser trains the AI, not my servers"
 date: 2026-07-04 20:00:00 +0900
 categories: [Projects]
 tags: [reinforcement-learning, webgpu, webassembly, machine-learning, show-hn]
