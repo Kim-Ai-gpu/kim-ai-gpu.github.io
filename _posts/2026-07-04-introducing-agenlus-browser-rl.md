@@ -83,8 +83,8 @@ To hide this latency:
 * **Service Worker Caching**: Once loaded, WASM binaries and pip packages are aggressively cached via IndexedDB/Cache API so subsequent visits load instantly.
 
 ### 2. Session Persistence (Handling Tab Closes)
-Unlike server-side training, if a user closes their browser tab, their training progress is lost. 
-To counter this, the training engine periodically serializes the agent's checkpoints (model weights, hyperparameters) and writes them to the browser's **IndexedDB**. If the tab crashes or the user accidentally navigates away, they can resume training right where they left off upon returning.
+Unlike server-side training, if a user closes their browser tab, they risk losing their active training progress. 
+Currently, we save basic training metadata (such as total episodes, training steps, and best reward) as well as local demonstration logs to the browser's **localStorage** for progress tracking. To solve the problem of losing active model states, our immediate next step is to implement automatic agent checkpointing (saving model weights and hyperparameters) to **IndexedDB**, allowing users to seamlessly resume active training sessions even after a tab close or crash.
 
 ---
 
