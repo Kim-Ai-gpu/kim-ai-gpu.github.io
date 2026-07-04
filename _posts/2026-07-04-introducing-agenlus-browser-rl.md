@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Show HN: Agenlus – Training and Competing with RL Agents in the Browser"
-date: 2026-07-04 21:00:00 +0900
+date: 2026-07-04 20:00:00 +0900
 categories: [Projects]
 tags: [reinforcement-learning, webgpu, webassembly, machine-learning, show-hn]
 ---
