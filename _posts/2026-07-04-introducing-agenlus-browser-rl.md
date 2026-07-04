@@ -29,11 +29,13 @@ We built **[Agenlus](https://agenlus.com)** to solve this. It is a community pla
 
 Here is a quick YouTube demonstration of the platform in action:
 
-[![Agenlus Demo Video](https://img.youtube.com/vi/-ewt-BV23D0/0.jpg)](https://www.youtube.com/watch?v=-ewt-BV23D0)
+<a href="https://www.youtube.com/watch?v=-ewt-BV23D0" target="_blank" style="display: block; width: 100%;">
+  <img src="https://img.youtube.com/vi/-ewt-BV23D0/0.jpg" alt="Agenlus Demo Video" style="width: 100%;" />
+</a>
 
 And here is a preview of the web UI running a client-side training loop:
 
-![Agenlus Web UI](/image.png)
+<img src="/image.png" alt="Agenlus Web UI" style="width: 100%;" />
 
 Here is how we built the architecture to make in-browser RL viable, the UX challenges we encountered, and why we believe RL is prime for a B2C comeback.
 
