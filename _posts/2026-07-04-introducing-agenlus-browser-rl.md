@@ -118,11 +118,21 @@ We designed a dual-mode interaction loop to fix this:
 
 This "human-in-the-loop" approach solves the cold-start problem of training from scratch and gives users a strong sense of ownership: *"This agent is learning to play like me, but better."*
 
-## What’s Next?
+## What’s Next? The Grand Vision
 
-Our current roadmap focuses on:
-* **Multi-Agent PvP & Co-op**: Allowing users to upload their trained agents to fight or cooperate with other users' agents in real-time.
-* **Low-Code Environment Builder**: A Roblox-style studio allowing users to customize and upload their own Gymnasium-compatible environments.
+We don't view Agenlus as just a browser game platform. Our ultimate goal is to build the foundational infrastructure for the next generation of physical control AI. 
+
+Our roadmap spans three major phases of expansion:
+
+### 1. The Roblox of Reinforcement Learning (Medium-Term)
+We are building a low-code, web-based sandbox studio where creators can design custom 2D/3D environments with complex physics, import them with a single click, and define custom reward systems. By gamifying environment creation, we want to scale from a few classic control tasks to thousands of user-generated physical challenges.
+
+### 2. Sim-to-Real: The Robotics Bridge (Long-Term)
+Training robots in the physical world is slow, dangerous, and expensive. Simulators are the only viable path forward. 
+Because Agenlus agents are trained and exported in standard formats (like ONNX and TensorFlow.js models) directly from the browser, we are building a seamless deployment pipeline to physical hardware. In the future, you will be able to train an autonomous drone control policy or a robotic arm manipulator inside an Agenlus browser tab, and deploy that exact policy over-the-air (OTA) to a physical robot (such as a Raspberry Pi or micro-controller) in seconds.
+
+### 3. The Foundation Model for Physical Control
+By crowdsourcing human demonstration trajectories (via our imitation learning loop) and parallelizing WebGPU training runs across our global user base, we aim to compile the largest public offline dataset of physical interactions. We want to use this data to train a **Generalist Foundation Model for Physical Control**—an agent that inherently understands gravity, friction, momentum, and spatial mechanics, allowing it to adapt to any physical environment or robotic hardware with zero-shot generalization.
 
 We would love to get your feedback on our architecture and approach. How would you design client-side RL differently? What environments would you like to see trained in a browser?
 
