@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Show HN: I built a site where your browser trains the AI, not my servers"
+title: "Create your own AI, then watch it battle others in your browser"
 date: 2026-07-04 20:00:00 +0900
 categories: [Projects]
 tags: [reinforcement-learning, webgpu, webassembly, machine-learning, show-hn]
