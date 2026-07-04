@@ -29,16 +29,7 @@ We built **[Agenlus](https://agenlus.com)** to solve this. It is a community pla
 
 Here is a quick YouTube demonstration of the platform in action:
 
-<a href="https://www.youtube.com/watch?v=-ewt-BV23D0" target="_blank" style="position: relative; display: block; width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
-  <img src="https://img.youtube.com/vi/-ewt-BV23D0/maxresdefault.jpg" alt="Agenlus Demo Video" style="width: 100%; display: block;" />
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.15); display: flex; align-items: center; justify-content: center;">
-    <div style="width: 68px; height: 48px; background: #ff0000; border-radius: 14px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-      <svg viewBox="0 0 24 24" style="width: 30px; height: 30px; fill: white;">
-        <path d="M8 5v14l11-7z"/>
-      </svg>
-    </div>
-  </div>
-</a>
+<a href="https://www.youtube.com/watch?v=-ewt-BV23D0" target="_blank" style="position: relative; display: block; width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);"><img src="https://img.youtube.com/vi/-ewt-BV23D0/maxresdefault.jpg" alt="Agenlus Demo Video" style="width: 100%; display: block;" /><span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; background: #ff0000; border-radius: 14px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"><svg viewBox="0 0 24 24" style="width: 30px; height: 30px; fill: white;"><path d="M8 5v14l11-7z"/></svg></span></a>
 
 And here is a preview of the web UI running a client-side training loop:
 
