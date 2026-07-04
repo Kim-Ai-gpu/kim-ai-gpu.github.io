@@ -124,8 +124,8 @@ We don't view Agenlus as just a browser game platform. Our ultimate goal is to b
 
 Our roadmap spans three major phases of expansion:
 
-### 1. The Roblox of Reinforcement Learning (Medium-Term)
-We are building a low-code, web-based sandbox studio where creators can design custom 2D/3D environments with complex physics, import them with a single click, and define custom reward systems. By gamifying environment creation, we want to scale from a few classic control tasks to thousands of user-generated physical challenges.
+### 1. A Modular Sandbox for Physics and Control (Medium-Term)
+We are building a low-code, web-based sandbox studio where creators can design custom 2D/3D environments with complex physics, import them with a single click, and define custom reward systems. By democratizing environment creation, we want to scale from a few classic control tasks to thousands of community-generated physical challenges.
 
 ### 2. Sim-to-Real: The Robotics Bridge (Long-Term)
 Training robots in the physical world is slow, dangerous, and expensive. Simulators are the only viable path forward. 
