@@ -25,6 +25,19 @@ Yet, compared to the explosive growth of LLM playgrounds and tools, RL remains r
 
 We built **[Agenlus](https://agenlus.com)** to solve this. It is a community platform and model hub for Reinforcement Learning designed to run **entirely in the browser**—no installation, no CUDA configuration, just instant training and evaluation.
 
+## Why B2C RL is Highly Viable Today
+
+We are currently witnessing immense compute inflation dominated by LLMs. This has made building B2C AI startups incredibly expensive, forcing founders to choose between paying massive cloud GPU invoices or raising millions in venture capital. 
+
+We believe **Reinforcement Learning (RL) is structurally primed to break this cycle** and lead a new wave of highly profitable B2C AI applications for three key reasons:
+
+* **Zero Marginal Infrastructure Cost**: Unlike LLMs where every inference token costs API credits, RL training and inference in Agenlus run **100% locally on the user's client hardware via WebGPU**. Our server costs are virtually zero. This allows us to scale to millions of active users and offer a permanent free tier without burning through compute credits, shifting the monetization focus to marketplace transactions and custom assets.
+* **Extreme Model Efficiency**: While a decent LLM requires billions of parameters, high-performing RL agents for games (even complex 2D/3D platformers and control tasks) are incredibly lightweight. A small Multi-Layer Perceptron (MLP) or a tiny Convolutional Neural Network (CNN) of under 100K parameters is often enough to achieve superhuman policies. These models load instantly and execute hundreds of steps per second on entry-level mobile devices or laptops.
+* **Gamification and Natural Viral Loops**: Generative AI tools are mostly focused on productivity. In contrast, training an RL agent is inherently gamified. It feels like nurturing a digital pet (like a Tamagotchi) or coaching a sports team. By transitioning the agent from direct control to autonomic training, users develop a deep emotional attachment to their agent's playstyle. When you add competitive leaderboards and multi-agent PvP arenas, you create a natural, viral social loop ("My agent can beat yours") that drives organic growth without expensive customer acquisition costs.
+* **Crowdsourcing the Future of Offline Data**: RL's biggest bottleneck in industries like robotics is the lack of diverse, high-quality demonstration datasets. By building a B2C platform where users play to train agents, we are crowdsourcing a massive library of human behavioral trajectories across thousands of environments. This diverse dataset is a goldmine for training future foundational models that generalize across multiple control domains.
+
+---
+
 ### See It in Action
 
 Here is a quick YouTube demonstration of the platform in action:
@@ -104,17 +117,6 @@ We designed a dual-mode interaction loop to fix this:
 3. **RL Fine-Tuning**: Once the agent has a basic grasp of the task, the user hands over control to the RL algorithm (PPO, DQN) to optimize the policy beyond human performance.
 
 This "human-in-the-loop" approach solves the cold-start problem of training from scratch and gives users a strong sense of ownership: *"This agent is learning to play like me, but better."*
-
----
-
-## Why B2C RL is Highly Viable Today
-
-We are seeing immense compute inflation with LLMs, making B2C AI startups highly dependent on massive API bills or VC funding. 
-
-RL models, especially for classic control, platformers, and simple 2D/3D environments, are computationally lightweight. A small MLP or a tiny CNN is often enough to achieve state-of-the-art performance in these games. 
-Because training runs entirely on the **user's client hardware via WebGPU**, our infrastructure costs are virtually zero. This allows us to offer a free tier without burning through cloud credits, shifting the monetization focus to custom-made environments and premium model exports.
-
----
 
 ## What’s Next?
 
