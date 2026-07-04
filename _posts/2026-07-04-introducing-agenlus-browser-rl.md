@@ -57,18 +57,25 @@ Browser Context
 ├── Main Thread (WebGPU & JS)
 │   ├── Model inference & policy updates
 │   ├── Action selection (via WebGPU-accelerated tensors)
-│   └── Direct HTML5 Canvas drawing (replacing Pygame rendering)
+│   └── Drawing Commands Bridge (rendering to Canvas)
 ```
 
 ### 1. Pyodide in a Web Worker
 We use [Pyodide](https://pyodide.org/) (Python compiled to WebAssembly) to run official `gymnasium` environments like `CartPole` and `MountainCar`. 
 Running Python environments in the browser can easily freeze the UI because Python execution is single-threaded. By offloading Pyodide to a dedicated **Web Worker**, we keep the main UI thread running at a smooth 60fps.
 
-### 2. Main Thread for WebGPU Inference & Canvas Rendering
+### 2. Main Thread for WebGPU Inference & Drawing Commands Bridge
 We utilize **WebGPU** on the main thread for neural network updates and forward passes. 
 Because the observation state returned by Pyodide is simple (e.g., 4 float values for `CartPole`), passing data between the Web Worker and the WebGPU context has negligible serialization overhead.
 
-Furthermore, we completely bypassed Pygame's rendering system. Pygame cannot easily output to a browser canvas without heavy overhead. Instead, we read the raw state values from Pyodide and draw the environment using native **HTML5 Canvas**. This not only looks much cleaner and more modern, but it also runs orders of magnitude faster than sending raw frame buffers from WASM.
+For environment visualization, standard Gymnasium environments rely heavily on Pygame, which cannot render directly to a browser Canvas and introduces massive performance overhead if we pass raw pixel frame buffers (`rgb_array`) back and forth from WASM.
+
+To bypass this, we built a **Pygame Mocking Bridge** in Pyodide:
+1. We intercept all `pygame.draw` calls (like `rect`, `circle`, `line`) in the Python environment by injecting a mock `pygame` module dynamically.
+2. The mock module translates Python drawing operations into a list of lightweight JSON drawing commands (e.g., `{"type": "circle", "color": [255, 0, 0], "center": [100, 50], "radius": 10}`).
+3. These instructions are sent from the Web Worker to the main thread, where **native HTML5 Canvas** draws them.
+
+This compromise preserves complete compatibility with standard Gymnasium environment rendering codes (`import pygame` inside the environment still works) while keeping the graphics pipeline lightning fast and hardware-accelerated.
 
 ---
 
